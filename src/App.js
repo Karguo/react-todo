@@ -27,11 +27,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <form className = "App" onSubmit = {this.onSubmit}>
-          <input value = {this.state.term} onChange = {this.onChange} />
-          <button>Submit</button>
-        </form>
+      <div className = "List">
+        <h1>To Do List</h1>
+          <form className = "App" onSubmit = {this.onSubmit}>
+            <input value = {this.state.term} onChange = {this.onChange} />
+            <br></br>
+            <button>Submit</button>
+          </form>
         <TodoList items = {this.state.items} />
       </div>
     );
