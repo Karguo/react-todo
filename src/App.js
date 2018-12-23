@@ -30,7 +30,7 @@ class App extends Component {
       <div className = "List">
         <h1>To Do List</h1>
           <form className = "App" onSubmit = {this.onSubmit}>
-            <input value = {this.state.term} onChange = {this.onChange} />
+            <input value = {this.state.term} onChange = {this.onChange} placeholder = "Add task" />
             <br></br>
             <button>Submit</button>
           </form>
